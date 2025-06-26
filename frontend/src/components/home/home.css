@@ -1,0 +1,27 @@
+/* Color Variables */
+:root {
+  --Stage-Black: #1C1C1C;
+  --Marquee-White: #FDF6F0;
+  --Spotlight-Gold: #F5C518;
+  --Encore-Green: #3A9D23;
+  --Curtain-Red: #B22222;
+}
+
+.homeContainer {
+  display: flex;
+  background: var(--Marquee-White);
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Make parent fill viewport */
+}
+
+.LongCard-Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  background-color: var(--Stage-Black, #1C1C1C);
+  margin-top: 50px;
+  width: 100%;
+}

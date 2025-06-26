@@ -1,0 +1,52 @@
+/* Color Variables */
+:root {
+  --Stage-Black: #1C1C1C;
+  --Marquee-White: #FDF6F0;
+  --Spotlight-Gold: #F5C518;
+  --Encore-Green: #3A9D23;
+  --Curtain-Red: #B22222;
+}
+
+.LongCard-Card {
+  width: 1057px;
+  height: 250px;
+  border-radius: 12px;
+  background: var(--Marquee-White);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  color: var(--Stage-Black);
+  padding: 20px;
+  gap: 20px;
+}
+
+.LongCard-Content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+
+.LongCard-LastRow{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    width: 100%;
+}
+
+.LongCard-VoteCount {
+  color: var(--Encore-Green);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+.LongCard-Card img{
+  width: 200px;
+  height: 250px;
+  border-radius: 12px;
+  object-fit: cover;
+}

@@ -1,0 +1,73 @@
+[
+    {
+        "id": 1,
+        "title": "Mamma Mia Meatballs!",
+        "description": "Classic Italian-style meatballs with Mediterranean flair. Amanda’s Creation  is a juicy, savoury meatballs bursting with Mediterranean flavour—every bite feels like a sun-soaked island escape!",
+        "creator": "Amanda Lehan-Canto",
+        "voteCount": 36,
+        "image": "https://picsum.photos/id/237/200/300"
+    },
+    {
+        "id": 2,
+        "title": "Les MisBrûlée",
+        "description": "A trio of Crème Brûlées inspired by Les Misérables, each representing a character. Keith attempted a rich, caramelized Crème Brûlée that sings of revolution and indulgence—liberté, égalité, délicatesse!",
+        "creator": "Keith Leak Jr",
+        "image": "https://picsum.photos/id/237/200/300"
+    },
+    {
+        "id": 3,
+        "title": "My Fair Lady Fingers",
+        "description": "A dainty tiramisu with class. Kimmy baked delicate ladyfingers layered with creamy mascarpone and coffee—refined and elegant, just like Eliza.",
+        "creator": "Kimmy Jimenez",
+        "image": "https://picsum.photos/id/237/200/300"
+    },
+    {
+        "id": 4,
+        "title": "A Sound of Muesli",
+        "description": "A fresh, harmonious breakfast medley of oats, fruit, and yoghurt. Shayne used a wholesome blend of oats, nuts, and fruit, harmonising like the hills in The Sound of Music.",
+        "creator": "Shayne Topp",
+        "image": "https://picsum.photos/id/237/200/300"
+    },
+    {
+        "id": 5,
+        "title": "A Chorus Lime Tart",
+        "description": "A zesty citrus tart with synchronised flavour. Angela made a zesty and sweet lime tart that hits all the right notes—an ensemble of flavour in every bite. ",
+        "creator": "Angela Giarratana",
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "id": 6,
+        "title": "Dear Eclair Hansen",
+        "description": "A sweet treat filled with vanilla and topped with theatre-blue icing. Chanse’s Creation Dear Eclair Hansen is inspired by Dear Evan Hansen.",
+        "creator": "Chanse McCrary",
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "id": 7,
+        "title": "And All That Deep Dish",
+        "description": "A bold, indulgent pizza with a fiery kick. Trevor made a decadent, cheesy deep-dish pizza, oozing with flavour—Chicago’s finest!",
+        "creator": "Trevor Evarts",
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "id": 8,
+        "title": "Pasta La Vista, Dolly! ",
+        "description": "Creamy pasta with a theatrical garlic parmesan sauce. Saige made a hearty pasta dish that’s charming and classic—buon appetito!",
+        "creator": "Saige Ryan Campbell",
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "id": 9,
+        "title": "Technicolour veggie wrap",
+        "description": "A rainbow veggie wrap bursting with colour. Tommy created a rainbow of crunchy veggies wrapped up in a soft tortilla, bursting with colour and freshness! ",
+        "creator": "Tommy Bowe",
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "id": 10,
+        "title": "Grease Lightning Mac & Cheese",
+        "description": "Extra cheesy, extra fast, extra nostalgic. Courtney ventured for a bold and creamy mac & cheese with a spicy twist—fast, fun, and unforgettable.",
+        "creator": "Courtney Miller",
+        "image": "https://via.placeholder.com/150"
+    }
+]

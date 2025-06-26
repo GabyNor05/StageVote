@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/Logo.svg";
-import {faUser} from "react-icons/fa";
+import {FaUser} from "react-icons/fa";
 function Navbar() {
   return (
     <nav className="navbar">
@@ -12,11 +12,10 @@ function Navbar() {
         <Link to="/dashboard" className="nav-link">Dashboard</Link>
         <Link to="/submission" className="nav-link">Submission</Link>
         <Link to="/about" className="nav-link">About</Link>
-        <Link to="/login" className="nav-link">
-        <faUser className = "user-icon"/>
-          
-        </Link>
       </div>
+      <Link to="/login" className="nav-link">
+        <FaUser className = "user-icon"/>  
+      </Link>
     </nav>
   );
 }
