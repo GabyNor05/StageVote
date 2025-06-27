@@ -14,7 +14,7 @@ function Navbar() {
         <Link to="/about" className="nav-link">About</Link>
       </div>
       <Link to="/login" className="nav-link">
-        <FaUser className = "user-icon"/>  
+        <FaUser className = "user-icon" class="tooltip"/>  
       </Link>
     </nav>
   );
