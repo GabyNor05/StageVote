@@ -50,3 +50,10 @@
   border-radius: 12px;
   object-fit: cover;
 }
+
+/* Add to your CSS file */
+.button-voted {
+  background-color: var(--Encore-Green); /* or any color you want */
+  color: #fff;
+  border: none;
+}

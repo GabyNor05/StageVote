@@ -1,0 +1,22 @@
+[
+    {
+    "userId": "abc123",
+    "optionId": "xyz789",
+    "createdAt": "timestamp"
+    },
+    {
+    "userId": "def456",
+    "optionId": "uvw123",
+    "createdAt": "timestamp"
+    },
+    {
+    "userId": "ghi789",
+    "optionId": "rst456",
+    "createdAt": "timestamp"
+    },
+    {
+    "userId": "jkl012",
+    "optionId": "opq789",
+    "createdAt": "timestamp"
+    }
+]

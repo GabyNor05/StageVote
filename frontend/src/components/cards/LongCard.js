@@ -1,9 +1,8 @@
 import React from "react";
 import "./cards.css";
 import data from "./data.json";
-import Button from "../Button";
 import { FaThumbsUp } from "react-icons/fa";
-
+import VoteButton from "./VoteButton";
 
 function LongCard() {
   return (
@@ -22,11 +21,8 @@ function LongCard() {
               <span className="LongCard-VoteCount">{item.voteCount} votes</span>
               </div>
               <div className="LongCard-GridItem">
-              <Button
-                text="Vote"
-                onClick={() => alert("Details Clicked")}
-                width="100px"
-                height="40px"
+              <VoteButton
+                optionId={item.id}
               />
               </div>
             </div>

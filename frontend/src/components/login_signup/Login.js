@@ -1,12 +1,43 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./auth.css";
 import broadwayImage from "../../assets/Broadway.jpg";
 import { useNavigate } from "react-router-dom";
+import { loginWithEmail, loginWithGoogle } from "../../firebase/authService"; 
+import { useAuth } from "../../firebase/contexts/authContext"; 
 
 function Login() {
+  const { currentUser } = useAuth();
   const navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-    const handleSignUpClick = () => {
+  useEffect(() => {
+    if (currentUser) {
+      navigate("/");
+    }
+  }, [currentUser, navigate]);
+
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    try {
+      await loginWithEmail(email, password);  // Call the login function from authService
+      navigate("/"); // Redirect to dashboard on successful login
+    } catch (error) { 
+      console.error("Login failed:", error);
+      alert("Login failed. Please check your credentials.");
+    }
+  };
+
+  const handleGoogleLogin = async () => {
+    try {
+      await loginWithGoogle();
+      navigate("/"); // Only navigate after successful login
+    } catch (err) {
+      alert("Google login failed: " + err.message);
+    }
+  };
+
+  const handleSignUpClick = () => {
     navigate("/signup");
   };
 
@@ -23,19 +54,19 @@ function Login() {
         <div className="login-flex">
           <div className="login-form">
             <h2>Login</h2>
-            <form>
+            <form onSubmit={handleLogin}>
               <div className="form-group">
                 <label htmlFor="email">Email:</label>
-                <input type="email" id="email" name="email" required />
+                <input type="email" id="email" name="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required />
               </div>
               <div className="form-group">
                 <label htmlFor="password">Password:</label>
-                <input type="password" id="password" name="password" required />
+                <input type="password" id="password" name="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)}  required />
               </div>
-              <button type="submit" className="login-button">Login</button>
+              <button type="submit" className="login-button" >Login</button>
             </form>
             <div className="Google-login">
-              <button className="google-button-container" onClick={() => alert("Google login not implemented yet")}>
+              <button className="google-button-container" onClick={handleGoogleLogin}>
               <div className="google-button">
                 <img src="https://fonts.gstatic.com/s/i/productlogos/googleg/v6/24px.svg" alt="Google Logo" />
                 <p>Login with Google</p>
