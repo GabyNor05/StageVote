@@ -50,6 +50,8 @@
   background-color: var(--Stage-Black, #1C1C1C);
   margin-top: 50px;
   width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .map-section{
